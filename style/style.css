@@ -1,0 +1,235 @@
+ul.navbar {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background: linear-gradient(rgb(76, 133, 3), rgb(121, 121, 7));
+  position: sticky;
+  top: 0;
+}
+li {
+  float: left;
+}
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 15px;
+  text-decoration: none;
+}
+li a:hover:not(.active) {
+  background-color: green;
+}
+li a.active {
+  background-color: rgb(4, 58, 4);
+}
+.title-article {
+  font-weight: bolder;
+  /* font-size: larger; */
+  color: grey;
+}
+.content-div {
+  margin: 10px 30px
+}
+.tag-group {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 500px;
+  /* border: 1px solid black; */
+}
+.tag {
+  background-color: rgb(67, 168, 67);
+  /* width: 200px; */
+  padding: 1px 10px;
+  height: 30px;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  display: flex;
+}
+.tag-text {
+  color: white;
+  font-weight: 100;
+  font-size: smaller;
+}
+.content-group {
+  /* align-items: center; */
+  /* border: 1px solid black; */
+  margin: 50px 0px;
+  padding: 0;
+  /* height: 250px; */
+}
+.list-content {
+  /* border: 1px solid black; */
+  border-radius: 10px;
+  margin: 10px 0px;
+}
+.content {
+  display: flex;
+  /* flex-direction: row; */
+  justify-content: space-between;
+  /* border: 1px solid black; */
+  height: 250px;
+  margin: 10px 0px;
+  border-radius: 10px;
+}
+.image-div {
+  display: flex;
+  align-items: center;
+}
+.article-image {
+  width: 300px;
+  height: 200px;
+  border-radius: 10px;
+}
+.text-content-div {
+  /* border: 1px solid red; */
+  width: 970px;
+  height: auto;
+  padding-left: 10px;
+}
+.text-div {
+  /* border: 1px solid green; */
+  display: flex;
+  flex: 1;
+  height: 200px;
+  /* ketika text melebihi div maka akan hilang */
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.text-content {
+  font-weight: 100;
+  font-size: medium;
+  letter-spacing: 1px;
+  line-height: 25px;
+  padding-top: 10px;
+}
+.readmore-div {
+  display: flex;
+  justify-content: flex-end;
+}
+
+/* responsive */
+@media screen and (max-width: 900px) {
+  ul.navbar li {
+    float: none;
+  }
+  div.content-group {
+    float: none;
+    display: flex;
+    height: auto;
+    flex-direction: column;
+  }
+  div.content {
+    float: none;
+    flex-direction: column;
+    height: 500px;
+  }
+  div.image-div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 500px;
+  }
+  .text-content-div {
+    width: fit-content;
+    height: auto;
+    /* border: 1px solid black; */
+    display: flex;
+    flex-direction: column;
+  }
+  .text-content {
+    line-height: 20px;
+  }
+  .article-image {
+    flex: 1;
+  }
+  .readmore-div {
+    display: flex;
+    justify-content: flex-end;
+  }
+  /* .text-readmore:link {
+    color: red;
+  } */
+}
+@media screen and (max-width: 600px) {
+  div.tag-group {
+    display: flex;
+    flex-direction: column;
+    height: 80px;
+    width: 400px;
+  }
+  .tag {
+    background-color: rgb(67, 168, 67);
+    /* width: 200px; */
+    padding: 1px 10px;
+    height: 30px;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+  }
+  .tag-text {
+    color: white;
+    font-weight: 100;
+    font-size: smaller;
+  }
+}
+
+/* detail */
+
+.content-detail-div {
+  display: flex;
+  flex-direction: column;
+  margin: 10px 30px;
+}
+.content-detail-image-div {
+  display: flex;
+  justify-content: center;
+  /* border: 1px solid black; */
+  margin-top: 10px;
+}
+.content-detail-img {
+  width: 700px;
+  height: 400px;
+  border-radius: 10px;
+}
+.content-detail-text-div {
+  /* border: 1px solid red; */
+  margin-top: 10px;
+  width: fit-content;
+}
+.content-detail-text {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 25px;
+  letter-spacing: 0.5px;
+  color: black;
+}
+.pengalaman-pelanggan {
+  color: black;
+  font-size: 20px;
+  font-weight: bolder;
+  font-style: italic;
+}
+/* ol .ol-family {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+ol li {
+  color: black;
+  font-weight: bold;
+  font-size: 18px;
+  letter-spacing: 1px;
+} */
+.listing {
+  color: black;
+  font-size: 17px;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+}
+.li-list {
+  float: left;
+}
